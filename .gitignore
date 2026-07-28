@@ -1,0 +1,43 @@
+# ==========================================
+# 1. Android & Gradle (Your Original Rules)
+# ==========================================
+*.iml
+.gradle
+/local.properties
+local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# ==========================================
+# 2. Python & Colab / Jupyter Notebooks
+# ==========================================
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.env/
+
+# ==========================================
+# 3. Large ML Model Binaries (>100MB)
+# ==========================================
+# Keeps your model weights out of Git history to avoid GitHub size limits
+*.tflite
+*.h5
+*.pth
+*.pt
+*.onnx
+
+# ==========================================
+# 4. Datasets & Patient Privacy (CRITICAL)
+# ==========================================
+# Excludes raw clinical photos and local datasets from being uploaded
+dataset/
+datasets/
+clinical_photos/
+raw_data/
+*.csv
+!android-app/**/src/**/*.csv   # Allows sample CSVs inside your Android project if needed

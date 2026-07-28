@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyUCLN</string>
+    <string name="upload_btn">Upload Patient Image</string>
+    <string name="reset_btn">Scan New Patient</string>
+    <string name="assessment_title">Automatic Assessment</string>
+</resources>
